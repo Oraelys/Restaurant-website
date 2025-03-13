@@ -17,10 +17,10 @@ function Wts() {
                         object-cover rounded-2xl shadow-2xl transform rotate-2 group-hover:rotate-0 transition-all
                         duration-300" style={{ maxWidth: "min(100%,640px)" }} />
                         <div className="absolute -bottom-4 -right-4 sm:-bottom-6 
-                        sm:-right-6 md:-right-2 bg-white p-2 sm:p-3 md:p-4 rounded-2xl
+                        sm:-right-6 md:-bottom-6 md:-right-2 bg-white p-2 sm:p-3 md:p-4 rounded-2xl
                         shadow-lg">
                             <img src={Wts3} alt="Customer" className="w-10 h-10 sm:w-12 sm:h-12 md:h-14 
-                            rouded-full border-4 border-orange-100" />
+                            rounded-full border-4 border-orange-100" />
                         </div>
                     </div>
                 </div>
@@ -36,17 +36,33 @@ function Wts() {
                                 uppercase tracking-wider">
                                     Testimonials
                                 </span>
-
-                                <h2 className="text-2xl sm:text-2xl md:text-2xl lg:text-4xl font-bold
+                            </div>
+                            <h2 className="text-2xl sm:text-2xl md:text-2xl lg:text-4xl font-bold
                                 text-gray-800 mb-4 sm:mb-6 lg:mb-8 leading-tight" style={{ fontFamily: "Dancing Script, cursive" }}>
-                                    Epicurean Echoes: <br className="hidden md:block" /> Savor The Moments
-                                </h2>
-                                <div className="bg-white/40 rounded-xl p-4 sm:p-6 md:p-6 lg:p-8 mb-6
+                                Epicurean Echoes: <br className="hidden md:block" /> Savor The Moments
+                            </h2>
+                            <div className="bg-white/40 rounded-xl p-4 sm:p-6 md:p-6 lg:p-8 mb-6
                                 border border-white/30">
-                                    <div className="flex gap-1 sm:gap-2 mb-3 text-orange-400">
-                                        {[...Array(5)].map((_, i) => (
-                                            <FaStar key={i} className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
-                                        ))}
+                                <div className="flex gap-1 sm:gap-2 mb-3 text-orange-400">
+                                    {[...Array(5)].map((_, i) => (
+                                        <FaStar key={i} className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                                    ))}
+                                </div>
+                                <blockquote className=" text-base sm:text-lg md:text-lg lg:text-xl
+                                xl:text-2xl text-gray-700 italic mb-4 sm:mb-6">
+                                    "Fudo is the best. Besides the many delicious meals, the services is also good,
+                                    especially in the very fast delivery..."
+                                </blockquote>
+                                <div className="flex items-center gap-3 sm:gap-4">
+                                    <img src={Wts3} alt="Customer" className="w-10 h-10 md:w-14 sm:w-12 sm:h-12 md:h-14 
+                            rounded-full border-4 border-orange-200"/>
+                                    <div className="">
+                                        <h4 className="font-bold text-sm sm:text-base md:text-lg lg:text-xl text-gray-800">
+                                            John Carter
+                                        </h4>
+                                        <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600">
+                                            Food Enthusiast
+                                        </p>
                                     </div>
                                 </div>
                             </div>
