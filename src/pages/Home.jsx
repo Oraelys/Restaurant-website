@@ -12,6 +12,7 @@ function Home() {
             <NavBar />
             <br />
 
+
             <main className='flex-1 w-full'>
                 <div className="w-full">
                     <Banner />
