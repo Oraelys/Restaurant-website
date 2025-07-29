@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [react(),
   tailwindcss(),
   ],
-  base: '/Restaurant-website', // Adjust this if your app is served from a subpath
+  base: '/Restaurant-website/', // Adjust this if your app is served from a subpath
 })
